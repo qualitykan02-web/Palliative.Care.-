@@ -152,7 +152,7 @@ const CONFIG={SHEET_ID:'',SHEET_NAME:'ข้อมูล',REFRESH_SECONDS:30};
 (()=>{const q=new URLSearchParams(location.search);
   if(q.get('id'))CONFIG.SHEET_ID=q.get('id');
   if(q.get('every'))CONFIG.REFRESH_SECONDS=+q.get('every');
-  CONFIG.CSV_URL=q.get('csv')||'';})();
+  CONFIG.CSV_URL=q.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRD7wSgAws_JMlxDyT8KsgI8JpFEPqa8Y-xVUvvQxBVMX7X-2ZeL_hsfxYF8kK6rGD9EdKCrexCI8EU/pub?gid=2126676433&single=true&output=csv')||'';})();
 const $=id=>document.getElementById(id);
 const nf=(v,d=1)=>(v==null||isNaN(v))?'–':Number(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const ni=v=>(v==null||isNaN(v))?'–':Number(v).toLocaleString('en-US',{maximumFractionDigits:0});
